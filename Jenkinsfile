@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'echo hello'
+        sh 'docker build -t registry.cn-hangzhou.aliyuncs.com/yanmei/kube-app:$BUILD_NUMBER .'
       }
     }
   }
